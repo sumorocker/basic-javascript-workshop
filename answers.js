@@ -11,3 +11,13 @@ console.log(firstLetter("Sweden"));
 console.log(firstLetter(""));
 
 console.log(firstLetter("Argentina"));
+
+// returning last letter of a string
+
+function lastLetter(string) {
+    return string.charAt(string.length- 1);
+}
+
+console.log(lastLetter("Orange"));
+console.log(lastLetter("Purple"));
+console.log(lastLetter(" "));
