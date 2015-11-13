@@ -20,4 +20,16 @@ function lastLetter(string) {
 
 console.log(lastLetter("Orange"));
 console.log(lastLetter("Purple"));
-console.log(lastLetter(" "));
+console.log(lastLetter(""));
+
+// returning the character at the position represented by the number
+
+function returnCharAndNum(string,number2) {
+    return string.charAt(number2);    
+}
+
+console.log (returnCharAndNum("Monkey",3));
+console.log (returnCharAndNum("Crocodile", 4));
+console.log (returnCharAndNum(" ", 1));
+
+
