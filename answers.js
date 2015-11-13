@@ -85,4 +85,12 @@ console.log(addSubMultDivString("divide", 56 , 2));
 console.log(addSubMultDivString("barf", 0 , 2));
 
 
+//returns the string repeated x number of times
 
+
+function repeatStringXtimes(string ,numberOfrepeats){
+    return (string + " ").repeat(numberOfrepeats)
+    
+}
+
+console.log(repeatStringXtimes("All work and no play makes Jack a dull boy", 10));
