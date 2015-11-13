@@ -32,4 +32,12 @@ console.log (returnCharAndNum("Monkey",3));
 console.log (returnCharAndNum("Crocodile", 4));
 console.log (returnCharAndNum(" ", 1));
 
+//two numbers and multiplied together
 
+function addNum(number1, number2){
+    return number1 + number2;
+}
+
+console.log (addNum( 2 , 4));
+console.log (addNum(50 ,78));
+console.log(addNum("blue" , "red"));
