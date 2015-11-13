@@ -94,3 +94,16 @@ function repeatStringXtimes(string ,numberOfrepeats){
 }
 
 console.log(repeatStringXtimes("All work and no play makes Jack a dull boy", 10));
+
+//returns the reverse
+
+function reverseWord(string){
+    return string.split('').reverse().join('')
+};
+
+console.log(reverseWord("hello"));
+console.log(reverseWord("racecar"));
+console.log(reverseWord("bread"));
+
+// split each character into '' reversed them while they were seperated then joined characters within ''
+
