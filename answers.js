@@ -44,6 +44,9 @@ console.log(addNum("blue" , "red"));
 
 // when I added blue and red it added the words together into an amazing new color called bluered(purple)
 
+
+//two numbers multiplied together
+
 function multiplyNum(number1, number2){
     return number1 * number2;
 }
@@ -52,3 +55,34 @@ console.log (multiplyNum(6 , 6));
 console.log (multiplyNum(36, 36));
 console.log (multiplyNum ("jeans" , 5));
 console.log (multiplyNum("jeans" , "nose"));
+
+// when I multiplid anything other than numbers it gave be NaN!
+
+// add subtract multiply and divide using a string and function
+
+function addSubMultDivString(string , number1 , number2){
+    if (string === "add"){
+        return number1 + number2;
+    } 
+    if (string === "subtract"){
+        return number1 - number2;
+    }
+    if (string === "multiply"){
+        return number1 * number2;
+    }
+    if (string === "divide"){
+        return number1/number2;
+    }
+    else{
+        return 0;
+    }
+};
+
+console.log(addSubMultDivString("add", 1 , 2));
+console.log(addSubMultDivString("subtract", 50 , 2));
+console.log(addSubMultDivString("multiply", 65 , 2));
+console.log(addSubMultDivString("divide", 56 , 2));
+console.log(addSubMultDivString("barf", 0 , 2));
+
+
+
