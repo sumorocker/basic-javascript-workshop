@@ -161,18 +161,15 @@ console.log(capitalize("speak quietly but bring a big can of paint"));
 
 
 var array = [3 , 6, 2, 56, 32, 5, 89, 32];
-var largest= 0;
 
-for (var i=0; i<=largest;i++){
-    if (array>largest) {
-        var largest=array[i];
-    }
-}
-
-console.log(largest);
+var largestNumber = array.sort(function(a,b){
+    return b-a;})[0]
+    
+console.log(largestNumber);
 
 
 var listOfWords = [ ]
+        
         
 function findLongestWord(str) {
   var words = str.split(' ');
@@ -188,3 +185,29 @@ function findLongestWord(str) {
   return longestWord;
 }
 
+//.reduce right applies a function to an array to reduce it to a single value
+var numbers = [1,2,3,4,5];
+
+var sum = numbers.reduceRight(function(a,b){return a+b;
+    
+});
+
+console.log(sum);
+
+var array1 = [44,55,66];
+var array2 = [44,20,30,66];
+
+var unique = [];
+for(var i = 0; i < array1.length; i++){
+    var found = false;
+    for(var j = 0; array2.length; j++){
+     if(array1[i] == array2[j]){
+      found = true;
+      break; 
+    }
+   }
+   if(found == false){
+   unique.push(array1[i]);
+  }
+}
+console.log(unique);
