@@ -107,3 +107,84 @@ console.log(reverseWord("bread"));
 
 // split each character into '' reversed them while they were seperated then joined characters within ''
 
+//the factorial of a number
+
+/*
+Write a function that takes a number and returns the factorial of a number. The factorial of 5 is 5x4x3x2x1. 
+The factorial of 0 is 1. Test your input on a few numbers, including negative numbers.
+*/
+
+function factorial(number){
+    
+    var result = 1;
+    
+    for(var i= 1 ; i <= number; i++){
+        result = result *i;
+    }
+    return result;
+}
+
+console.log(factorial(5));
+
+//Write a function that takes a phrase as a string, and returns the longest word in that phrase. 
+
+//If the phrase contains more than one such word, return the first occurrence. Test your function on a few inputs.
+
+function longestWord(phrase) {
+    var split = phrase.split(" ");
+    var longest = 0;
+    var word = null;
+    for (var i = 0; i < split.length; i++) {
+        if (longest < split[i].length) {
+            longest = split[i].length;
+            word = split[i];
+        }
+    }
+    return word;
+}
+console.log(longestWord("this is how the dog walks away"));
+console.log(longestWord("the long dark is a great game"));
+console.log(longestWord("the snow is yellow"));
+
+
+
+//capitalizing all the words in a string
+
+function capitalize (sentence){
+    return sentence.toUpperCase();
+}
+
+console.log(capitalize("this should be capitalized"));
+console.log(capitalize("hey steve, steve, steeeve!"));
+console.log(capitalize("speak quietly but bring a big can of paint"));
+
+
+
+var array = [3 , 6, 2, 56, 32, 5, 89, 32];
+var largest= 0;
+
+for (var i=0; i<=largest;i++){
+    if (array>largest) {
+        var largest=array[i];
+    }
+}
+
+console.log(largest);
+
+
+var listOfWords = [ ]
+        
+function findLongestWord(str) {
+  var words = str.split(' ');
+  var longestLength = 0;
+  var longestWord;
+  for (var i=0;i<words.length;i++) {
+    if (words[i].length > longestLength) {
+       longestLength = words[i].length;
+       longestWord = words[i];
+    
+    }
+  }
+  return longestWord;
+}
+
